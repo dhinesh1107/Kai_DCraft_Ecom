@@ -1,0 +1,116 @@
+.product-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.add-to-cart, .buy-now {
+    background-color: rgb(250,254,253);
+    color: rgb(2, 151, 188);
+    border: 1px solid lightgrey;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 110px;
+    transition: 1ms;
+}
+.add-to-cart:hover,
+.buy-now:hover{
+    width: 120px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.product-description, .product-features, .product-specifications {
+    margin-bottom: 20px;
+}
+
+.reviews {
+    margin-bottom: 20px;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.write-review {
+    margin-bottom: 20px;
+}
+.product-description h2,
+.product-features h2,
+.product-specifications h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product-features ul,
+.product-specifications ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.review-options {
+    margin-bottom: 10px;
+}
+
+.star-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.star-button:hover {
+    background-color: #ccc;
+}
+
+.review-input {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: vertical;
+}
+
+.submit-review-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .product-detail {
+        padding: 10px;
+    }
+}

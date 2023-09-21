@@ -1,0 +1,72 @@
+.navContainer{
+    background-color: rgb(208, 251, 241 / 30%);
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-size: 18px;
+}
+.nav_link{
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+}
+.link{
+    text-decoration: none;
+    color: rgb(2, 151, 188);
+    font-size: 18px;
+}
+.link:hover{
+    text-decoration: underline white;
+    color: rgb(2, 92, 114);
+    cursor: pointer;
+}
+.cart{
+    filter: invert(49%) sepia(43%) saturate(5816%) hue-rotate(163deg) brightness(92%) contrast(98%);
+}
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    .navContainer {
+        padding: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center align items vertically */
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 20px; /* Slightly larger font size for title */
+        margin-bottom: 10px; /* Add some space below the title */
+    }
+
+    .nav_link {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align links horizontally */
+    }
+
+    .link {
+        font-size: 16px;
+        padding: 5px 10px; /* Increase padding for touch-friendly targets */
+        border-radius: 5px; /* Add rounded corners for links */
+    }
+
+    .link:hover {
+        text-decoration: none; /* Remove underline on hover */
+        color: rgb(2, 92, 114);
+        background-color: rgba(2, 151, 188, 0.1); /* Add a subtle background color on hover */
+        cursor: pointer;
+    }
+}

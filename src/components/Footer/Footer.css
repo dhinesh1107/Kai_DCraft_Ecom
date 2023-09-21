@@ -1,0 +1,19 @@
+.footer_container{
+    width: 100%;
+    background-color: rgb(250,254,253);
+}
+.footer{
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    /* bottom: 0; */
+    align-items: center;
+    justify-content: space-between;
+}
+.copyryt h4{
+    color: rgb(0, 58, 72);
+}
+.fb, .insta{
+    border: none;
+    background-color: transparent;
+}
